@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #585656;
+}
+
+header {
+    background-color: #242323;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    width: 90%; /* Использовать процентное значение для адаптивности */
+    max-width: 700px; /* Максимальная ширина для больших экранов */
+    height: auto;
+    flex-grow: 1;
+    display: flex; 
+    flex-direction: column; 
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%; /* Ширина изображения 100% от родительского блока */
+    height: auto; /* Высота автоматически подстраивается */
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.nav-link {
+    margin-right: 10px; 
+}
+
+.justify-text {
+    text-align: justify; 
+} 
+
+.left-align {
+    text-align: left; 
+}
+
+.center-align {
+    text-align: center; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav li {
+        display: block; 
+        margin: 5px 0; 
+    }
+
+    header, .nav {
+        padding: 10px; 
+    }
+
+    main {
+        padding: 10px; 
+    }
+
+    section {
+        padding: 15px; 
+    }
+}
